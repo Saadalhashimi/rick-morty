@@ -1,8 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 const Header = (props) => {
    
-    console.log('props', props)
+
   return (
     <div className='header'>
         <input type='search' onChange={props.onSearchChange} placeholder='Search'/>
