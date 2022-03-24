@@ -90,3 +90,11 @@
     background-color: white;
     border: none;
 }
+
+.checkbox-element{
+    color: #fff;
+}
+
+.form-check-input:checked{
+    background-color: transparent;
+}

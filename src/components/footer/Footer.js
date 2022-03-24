@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = ({nextPage,previousPage}) => {
+const Footer = ({next,previous}) => {
   return (
     <div className='footer'>
-        <button onClick={previousPage}><i class="fa-solid fa-chevron-left fa-2x"></i></button>
-        <button onClick={nextPage}> <i class="fa-solid fa-chevron-right fa-2x"></i></button>
+        <button onClick={previous}><i className="fa-solid fa-chevron-left fa-2x"></i></button>
+        <button onClick={next}> <i className="fa-solid fa-chevron-right fa-2x"></i></button>
         
        
     </div>

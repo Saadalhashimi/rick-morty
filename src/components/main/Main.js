@@ -1,29 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import Modal from '../modal/Modal'
 
-const Main = ({pageNumber,searchValue}) => {
- const [characters,setCharacters] = useState([])
+const Main = ({searchValue,characters}) => {
+ 
+
  const [openModal,setOpenModal] = useState(false)
  const [chosenCharacter,setChosenCharacter]= useState({})
-
- console.log(characters)
- console.log(pageNumber)
  
-
- const getCharacters = async ()=>{
-    const res = await fetch(`https://rickandmortyapi.com/api/character/?page=${pageNumber}`)
-    const data = await res.json()
-    setCharacters(data.results)
-   
-}
- useEffect(()=>{
-    getCharacters()
- },[characters])
-
- 
-
- 
-
 
   return (
     <div  className='character-list'>
